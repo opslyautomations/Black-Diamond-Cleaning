@@ -1,8 +1,8 @@
 export const BUSINESS = {
   name: "Black Diamond Cleaning Solutions",
-  phone: "(570) 555-0100",
-  phoneHref: "tel:+15705550100",
-  email: "info@blackdiamondcleaningsolutions.com",
+  phone: "(215) 650-3101",
+  phoneHref: "tel:+12156503101",
+  email: "info@blackdiamondcleaningsolutionsllc.com",
   address: "Pennsylvania & New York",
 };
 

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Star, Shield, Clock, Users, ChevronRight, Sparkles, CheckCircle2, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BUSINESS, SERVICES, LOCATIONS, REVIEWS } from "@/lib/data";
-import heroImage from "@/assets/hero-home.svg";
 import EmbeddedForm from "@/components/EmbeddedForm";
 import FormPopup from "@/components/FormPopup";
 
@@ -22,13 +21,24 @@ export default function Index() {
       <FormPopup open={popupOpen} onOpenChange={setPopupOpen} />
 
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 hidden md:block bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
-        <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="absolute inset-0 md:hidden bg-section-gradient" />
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden" style={{ background: "linear-gradient(135deg, #040b1a 0%, #0a1835 45%, #0e2554 100%)" }}>
+
+        {/* Dot grid */}
+        <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(circle, #93c5fd 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
+
+        {/* Primary glow — top right */}
+        <div className="absolute top-[-15%] right-[-8%] w-[640px] h-[640px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(59,130,246,0.28) 0%, transparent 70%)" }} />
+
+        {/* Secondary glow — bottom left */}
+        <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(30,64,175,0.35) 0%, transparent 70%)" }} />
+
+        {/* Decorative diamond outlines */}
+        <div className="absolute right-[3%] top-[8%] w-72 h-72 border border-blue-400/10 rotate-45 pointer-events-none" />
+        <div className="absolute right-[5.5%] top-[11.5%] w-52 h-52 border border-blue-300/8 rotate-45 pointer-events-none" />
+        <div className="absolute right-[7.5%] top-[14.5%] w-36 h-36 border border-blue-200/6 rotate-45 pointer-events-none" />
+
+        {/* Horizontal accent line */}
+        <div className="absolute left-0 bottom-0 w-full h-px" style={{ background: "linear-gradient(to right, transparent, rgba(59,130,246,0.3), transparent)" }} />
 
         <div className="relative container-narrow py-20 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
