@@ -29,7 +29,7 @@ const companyLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Reviews', href: '/reviews' },
-  { name: 'Gallery', href: '/gallery' },
+  { name: 'Blog', href: '/blog' },
   { name: 'Specials', href: '/specials' },
   { name: 'Contact', href: '/contact' },
 ]

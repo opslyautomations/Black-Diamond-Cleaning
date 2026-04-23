@@ -33,7 +33,7 @@ const mainLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Reviews', href: '/reviews' },
-  { name: 'Gallery', href: '/gallery' },
+  { name: 'Blog', href: '/blog' },
   { name: 'Specials', href: '/specials' },
   { name: 'Contact', href: '/contact' },
 ]
@@ -135,7 +135,7 @@ export default function Navbar() {
               </DesktopDropdown>
 
               <NavLink href="/reviews" label="Reviews" active={isActive('/reviews')} />
-              <NavLink href="/gallery" label="Gallery" active={isActive('/gallery')} />
+              <NavLink href="/blog" label="Blog" active={isActive('/blog')} />
               <NavLink href="/specials" label="Specials" active={isActive('/specials')} />
               <NavLink href="/contact" label="Contact" active={isActive('/contact')} />
             </nav>
@@ -262,7 +262,7 @@ export default function Navbar() {
           </div>
 
           <MobileNavLink href="/reviews" label="Reviews" active={isActive('/reviews')} />
-          <MobileNavLink href="/gallery" label="Gallery" active={isActive('/gallery')} />
+          <MobileNavLink href="/blog" label="Blog" active={isActive('/blog')} />
           <MobileNavLink href="/specials" label="Specials" active={isActive('/specials')} />
           <MobileNavLink href="/contact" label="Contact" active={isActive('/contact')} />
         </nav>

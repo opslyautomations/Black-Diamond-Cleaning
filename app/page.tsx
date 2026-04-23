@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import {
   Phone,
   Star,
@@ -16,6 +15,7 @@ import {
   MessageSquare,
 } from 'lucide-react'
 import { PHONE_DISPLAY, PHONE_TEL, services, serviceAreasPa, serviceAreasNy, featuredReviews } from '@/lib/data'
+import { getRecentPosts, formatDate } from '@/lib/blog-posts'
 import { BASE_URL, SITE_NAME, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { websiteSchema } from '@/lib/schema'
 import JsonLd from '@/components/JsonLd'
@@ -183,74 +183,39 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="space-y-20">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="rounded-2xl overflow-hidden bg-brand-light aspect-video">
-                <Image
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
-                  alt="Professional cleaning team arriving on time to a home in Pennsylvania"
-                  width={800}
-                  height={450}
-                  className="w-full h-full object-cover"
-                />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-brand-light rounded-2xl p-8">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 shadow-sm">
+                <Clock className="w-6 h-6 text-brand-blue" />
               </div>
-              <div>
-                <div className="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
-                  <Clock className="w-6 h-6 text-brand-blue" />
-                </div>
-                <h3 className="font-heading font-bold text-2xl text-brand-navy mb-4">
-                  Reliability You Can Count On
-                </h3>
-                <p className="text-brand-gray text-lg leading-relaxed">
-                  We show up on time, every time. No missed appointments, no excuses. Our team understands that your time is valuable, and we treat every appointment with the same professionalism and punctuality we'd expect ourselves.
-                </p>
-              </div>
+              <h3 className="font-heading font-bold text-xl text-brand-navy mb-3">
+                Reliability You Can Count On
+              </h3>
+              <p className="text-brand-gray leading-relaxed">
+                We show up on time, every time. No missed appointments, no excuses. Our team treats every appointment with the same professionalism and punctuality we'd expect ourselves.
+              </p>
             </div>
-
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
-                <div className="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
-                  <Sparkles className="w-6 h-6 text-brand-blue" />
-                </div>
-                <h3 className="font-heading font-bold text-2xl text-brand-navy mb-4">
-                  Consistent, Meticulous Quality
-                </h3>
-                <p className="text-brand-gray text-lg leading-relaxed">
-                  Every cleaner is trained on our detailed checklist. You get the same premium result every visit — not just the first one. Our systematic approach means nothing gets missed and every corner gets the attention it deserves.
-                </p>
+            <div className="bg-brand-light rounded-2xl p-8">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 shadow-sm">
+                <Sparkles className="w-6 h-6 text-brand-blue" />
               </div>
-              <div className="order-1 lg:order-2 rounded-2xl overflow-hidden bg-brand-light aspect-video">
-                <Image
-                  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
-                  alt="Meticulous kitchen deep cleaning results in Pennsylvania home"
-                  width={800}
-                  height={450}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <h3 className="font-heading font-bold text-xl text-brand-navy mb-3">
+                Consistent, Meticulous Quality
+              </h3>
+              <p className="text-brand-gray leading-relaxed">
+                Every cleaner is trained on our detailed checklist. You get the same premium result every visit — not just the first one. Nothing gets missed, every corner gets attention.
+              </p>
             </div>
-
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="rounded-2xl overflow-hidden bg-brand-light aspect-video">
-                <Image
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
-                  alt="Clear communication with Black Diamond house cleaning team"
-                  width={800}
-                  height={450}
-                  className="w-full h-full object-cover"
-                />
+            <div className="bg-brand-light rounded-2xl p-8">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 shadow-sm">
+                <MessageSquare className="w-6 h-6 text-brand-blue" />
               </div>
-              <div>
-                <div className="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
-                  <MessageSquare className="w-6 h-6 text-brand-blue" />
-                </div>
-                <h3 className="font-heading font-bold text-2xl text-brand-navy mb-4">
-                  Clear Communication
-                </h3>
-                <p className="text-brand-gray text-lg leading-relaxed">
-                  Text updates, easy booking, and a real person who picks up the phone. We believe great service starts with great communication — you'll always know when we're coming and how things went.
-                </p>
-              </div>
+              <h3 className="font-heading font-bold text-xl text-brand-navy mb-3">
+                Clear Communication
+              </h3>
+              <p className="text-brand-gray leading-relaxed">
+                Text updates, easy booking, and a real person who picks up the phone. You'll always know when we're coming and how things went.
+              </p>
             </div>
           </div>
         </div>
@@ -294,36 +259,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── GALLERY PREVIEW ── */}
-      <section className="section-padding bg-white">
-        <div className="section-container">
-          <div className="text-center mb-10">
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-brand-navy mb-4">
-              See Our Work
-            </h2>
-            <p className="text-brand-gray text-lg">Real homes. Real results.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-            {galleryImages.map((img) => (
-              <div key={img.src} className="aspect-[4/3] rounded-xl overflow-hidden">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  width={600}
-                  height={450}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link href="/gallery" className="btn-primary">
-              View Full Gallery <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ── BLOG PREVIEW ── */}
+      <BlogPreview />
 
       {/* ── REVIEWS ── */}
       <section className="section-padding bg-brand-light">
@@ -466,11 +403,50 @@ function LocationCard({ area }: { area: { name: string; state: string; href: str
   )
 }
 
-const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80', alt: 'Professional deep cleaning kitchen Pennsylvania' },
-  { src: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80', alt: 'Spotless bathroom cleaning Buffalo NY' },
-  { src: 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&q=80', alt: 'Clean living room recurring house cleaning Rochester NY' },
-  { src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80', alt: 'Tidy bedroom move-in cleaning Syracuse NY' },
-  { src: 'https://images.unsplash.com/photo-1563453392212-326f5e854473?w=600&q=80', alt: 'Tile grout deep cleaning Harrisburg PA' },
-  { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80', alt: 'Kitchen after deep clean Airbnb turnover Scranton PA' },
-]
+function BlogPreview() {
+  const posts = getRecentPosts(3)
+  return (
+    <section className="section-padding bg-white">
+      <div className="section-container">
+        <div className="text-center mb-12">
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-brand-navy mb-4">
+            Cleaning Tips &amp; Guides
+          </h2>
+          <p className="text-brand-gray text-lg max-w-2xl mx-auto">
+            Expert advice from the Black Diamond team — helping you keep your home cleaner, longer.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {posts.map((post) => (
+            <article
+              key={post.slug}
+              className="bg-brand-light rounded-xl p-6 flex flex-col card-hover border border-gray-100"
+            >
+              <span className="text-xs font-semibold text-brand-blue mb-3 inline-block">
+                {post.category}
+              </span>
+              <h3 className="font-heading font-bold text-brand-navy text-lg leading-snug mb-2 flex-1">
+                {post.title}
+              </h3>
+              <p className="text-brand-gray text-sm mb-4 line-clamp-2">{post.excerpt}</p>
+              <div className="flex items-center justify-between pt-3 border-t border-gray-200">
+                <span className="text-xs text-brand-gray">{formatDate(post.date)}</span>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="inline-flex items-center gap-1 text-brand-blue font-semibold text-sm hover:gap-2 transition-all"
+                >
+                  Read <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div className="text-center">
+          <Link href="/blog" className="btn-primary">
+            View All Articles <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  )
+}
