@@ -29,6 +29,10 @@ export const metadata: Metadata = {
   },
   description:
     'Premium house cleaning, deep cleaning & maid service across Pennsylvania and New York. 4.9★ on Google. 500+ homes cleaned. Get a free quote today.',
+  openGraph: {
+    siteName: SITE_NAME,
+    locale: 'en_US',
+  },
   other: {
     'theme-color': '#0B1220',
   },
