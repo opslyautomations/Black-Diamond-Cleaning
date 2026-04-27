@@ -7,13 +7,13 @@ import { breadcrumbSchema } from '@/lib/schema'
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  title: `Cleaning Tips & Guides | ${SITE_NAME} Blog`,
+  title: { absolute: 'Cleaning Tips & Guides | Black Diamond Cleaning Blog' },
   description:
     'Expert cleaning tips, move-in/move-out guides, deep cleaning advice, and local resources for homeowners and renters in Pennsylvania and New York.',
   alternates: { canonical: `${BASE_URL}/blog` },
   openGraph: {
     type: 'website',
-    title: `Cleaning Tips & Guides | ${SITE_NAME} Blog`,
+    title: 'Cleaning Tips & Guides | Black Diamond Cleaning Blog',
     description:
       'Expert cleaning tips, move-in/move-out guides, deep cleaning advice, and local resources for homeowners across PA & NY.',
     url: `${BASE_URL}/blog`,

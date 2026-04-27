@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "deep-cleaning-vs-standard-cleaning",
     title: "Deep Cleaning vs. Standard Cleaning: Which One Does Your Home Actually Need?",
-    metaTitle: "Deep Cleaning vs. Standard Cleaning | Black Diamond Cleaning PA & NY",
+    metaTitle: "Deep Cleaning vs. Standard Cleaning | Black Diamond",
     description:
       "Not sure whether you need a deep clean or a standard clean? We break down exactly what each service covers so you can choose the right one for your home.",
     date: "2025-03-15",
@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-prepare-for-professional-house-cleaning",
     title: "How to Prepare for a Professional House Cleaning (10 Simple Steps)",
-    metaTitle: "How to Prepare for a Professional House Cleaning | Black Diamond",
+    metaTitle: "How to Prepare for a Professional House Cleaning",
     description:
       "Getting ready for your cleaning appointment helps your cleaners work faster and more efficiently. Here are 10 quick things to do before they arrive.",
     date: "2025-03-22",
@@ -203,7 +203,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "move-out-cleaning-checklist-pennsylvania",
     title: "Move-Out Cleaning Checklist: What Pennsylvania Landlords Actually Inspect",
-    metaTitle: "Move-Out Cleaning Checklist Pennsylvania | Black Diamond Cleaning",
+    metaTitle: "Move-Out Cleaning Checklist for Pennsylvania Renters",
     description:
       "Moving out in Pennsylvania? This room-by-room checklist covers exactly what landlords and property managers look for during move-out inspections — and how to pass every time.",
     date: "2025-04-01",
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-often-schedule-professional-house-cleaning",
     title: "How Often Should You Schedule Professional House Cleaning? A Practical Guide",
-    metaTitle: "How Often Should You Get Your House Professionally Cleaned? | Black Diamond",
+    metaTitle: "How Often Should You Schedule Professional Cleaning?",
     description:
       "Weekly, bi-weekly, monthly — what cleaning frequency is actually right for your home? We break it down by household type so you can stop guessing.",
     date: "2025-04-08",
@@ -370,7 +370,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "benefits-of-recurring-house-cleaning-service",
     title: "7 Reasons a Recurring Cleaning Service Is Worth Every Penny",
-    metaTitle: "7 Benefits of Recurring House Cleaning Service | Black Diamond Cleaning",
+    metaTitle: "7 Benefits of a Recurring House Cleaning Service",
     description:
       "Still on the fence about a recurring cleaning plan? Here are seven concrete reasons why consistent professional cleaning saves time, reduces stress, and protects your home.",
     date: "2025-04-15",
@@ -434,7 +434,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "move-in-cleaning-guide-new-home",
     title: "Move-In Cleaning Guide: How to Start Fresh in Your New Home",
-    metaTitle: "Move-In Cleaning Guide for New Homes | Black Diamond Cleaning PA & NY",
+    metaTitle: "Move-In Cleaning Guide for Your New Home | Black Diamond",
     description:
       "Moving into a new place? Here is exactly how to approach your move-in cleaning so you start with a truly clean, healthy home — not just a visually clean one.",
     date: "2025-04-22",
@@ -518,7 +518,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "signs-your-home-needs-a-deep-clean",
     title: "6 Signs Your Home Needs a Deep Clean (Not Just a Regular Tidy)",
-    metaTitle: "6 Signs Your Home Needs a Deep Clean | Black Diamond Cleaning",
+    metaTitle: "6 Signs Your Home Needs a Deep Clean | Black Diamond",
     description:
       "Some signs of a dirty home are obvious. Others are easy to miss until things have really gotten out of hand. Here are six signs it is time for a professional deep clean.",
     date: "2025-05-01",
@@ -581,7 +581,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "commercial-cleaning-pennsylvania-new-york-businesses",
     title: "Commercial Cleaning for Pennsylvania & New York Businesses: What You Need to Know",
-    metaTitle: "Commercial Cleaning Services PA & NY | Black Diamond Cleaning Solutions",
+    metaTitle: "Commercial Cleaning for PA & NY Businesses | Black Diamond",
     description:
       "Running a business in Pennsylvania or New York? Here is what to look for in a commercial cleaning provider, how often you should schedule service, and what a professional clean actually covers.",
     date: "2025-05-10",
@@ -665,7 +665,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "house-cleaning-tips-for-pet-owners",
     title: "House Cleaning Tips for Pet Owners — And When to Call a Pro",
-    metaTitle: "House Cleaning Tips for Pet Owners in PA & NY | Black Diamond Cleaning",
+    metaTitle: "House Cleaning Tips for Pet Owners | Black Diamond",
     description:
       "Pets make cleaning harder. Here are the most effective strategies for keeping a clean home when you have dogs or cats — plus when it is time to bring in professionals.",
     date: "2025-05-18",
@@ -735,7 +735,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-a-professional-kitchen-deep-clean-includes",
     title: "What Does a Professional Kitchen Deep Clean Actually Include?",
-    metaTitle: "What a Professional Kitchen Deep Clean Includes | Black Diamond Cleaning",
+    metaTitle: "What a Professional Kitchen Deep Clean Includes",
     description:
       "The kitchen is the hardest room in any home to deep clean properly. Here is a complete breakdown of what a professional kitchen deep clean covers — and why it matters.",
     date: "2025-05-25",

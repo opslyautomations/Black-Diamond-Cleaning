@@ -20,17 +20,17 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Commercial Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+  title: { absolute: 'Commercial Cleaning | Black Diamond Cleaning PA & NY' },
   description:
     'Commercial cleaning from Black Diamond — small offices, medical suites & salons across PA & NY. After-hours available. 4.9★ on Google. Get a free quote today.',
   alternates: { canonical: `${BASE_URL}/services/commercial-cleaning` },
   openGraph: {
     type: 'website',
-    title: 'Commercial Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+    title: { absolute: 'Commercial Cleaning | Black Diamond Cleaning PA & NY' },
     description:
       'Commercial cleaning from Black Diamond — small offices, medical suites & salons across PA & NY. After-hours available. 4.9★ on Google. Get a free quote today.',
     url: `${BASE_URL}/services/commercial-cleaning`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{
       url: ogImageUrl('Commercial Cleaning Service', 'Residential-Quality Care for Your Workplace — PA & NY'),

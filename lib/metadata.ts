@@ -1,5 +1,5 @@
 export const BASE_URL = 'https://www.blackdiamondcleaningsolutionsllc.com'
-export const SITE_NAME = 'Black Diamond Cleaning Solutions LLC'
+export const SITE_NAME = 'Black Diamond Cleaning Solutions'
 
 export function ogImageUrl(title: string, subtitle?: string, variant?: string): string {
   const params = new URLSearchParams({ title })

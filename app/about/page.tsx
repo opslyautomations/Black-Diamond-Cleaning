@@ -7,16 +7,16 @@ import { breadcrumbSchema } from '@/lib/schema'
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  title: 'About Black Diamond Cleaning Solutions | Trusted House Cleaners in PA & NY',
+  title: { absolute: 'About Black Diamond Cleaning | PA & NY' },
   description:
     'About Black Diamond Cleaning Solutions — founded by Joe to bring reliable, consistent house cleaning to PA & NY. 4.9★ on Google. 500+ homes cleaned. Learn our story.',
   alternates: { canonical: `${BASE_URL}/about` },
   openGraph: {
     type: 'website',
-    title: 'About Black Diamond Cleaning Solutions | Trusted House Cleaners in PA & NY',
+    title: { absolute: 'About Black Diamond Cleaning | PA & NY' },
     description: 'About Black Diamond Cleaning Solutions — founded by Joe to bring reliable, consistent house cleaning to PA & NY. 4.9★ on Google. 500+ homes cleaned.',
     url: `${BASE_URL}/about`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('About Black Diamond Cleaning Solutions', 'Built on Reliability, Consistency & Care'), secureUrl: ogImageUrl('About Black Diamond Cleaning Solutions', 'Built on Reliability, Consistency & Care'), width: 1200, height: 630, alt: 'About Black Diamond Cleaning Solutions', type: 'image/png' }],
   },

@@ -7,16 +7,16 @@ import { breadcrumbSchema, reviewAggregateSchema, reviewSchema } from '@/lib/sch
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  title: 'Black Diamond Cleaning Reviews | 4.9★ Across PA & NY',
+  title: { absolute: 'Customer Reviews | 4.9★ Black Diamond Cleaning' },
   description:
     'Read real reviews from Black Diamond Cleaning customers across Pennsylvania and New York. 4.9★ average from 500+ cleanings. See what homeowners say.',
   alternates: { canonical: `${BASE_URL}/reviews` },
   openGraph: {
     type: 'website',
-    title: 'Black Diamond Cleaning Reviews | 4.9★ Across PA & NY',
+    title: { absolute: 'Customer Reviews | 4.9★ Black Diamond Cleaning' },
     description: 'Read real reviews from Black Diamond Cleaning customers across Pennsylvania and New York. 4.9★ average from 500+ cleanings.',
     url: `${BASE_URL}/reviews`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('Customer Reviews', '4.9★ Average from 500+ Cleanings in PA & NY'), secureUrl: ogImageUrl('Customer Reviews', '4.9★ Average from 500+ Cleanings in PA & NY'), width: 1200, height: 630, alt: 'Black Diamond Cleaning Reviews — 4.9★ PA & NY', type: 'image/png' }],
   },

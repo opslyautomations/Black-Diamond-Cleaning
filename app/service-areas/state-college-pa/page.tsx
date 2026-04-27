@@ -5,16 +5,16 @@ import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'House Cleaning in State College, PA | Black Diamond Cleaning Solutions',
+  title: { absolute: 'House Cleaning in State College, PA | Black Diamond' },
   description:
     'Professional house cleaning in State College, PA. Trusted by Penn State-area homeowners and landlords. 4.9★ on Google. Get your free quote today.',
   alternates: { canonical: `${BASE_URL}/service-areas/state-college-pa` },
   openGraph: {
     type: 'website',
-    title: 'House Cleaning in State College, PA | Black Diamond Cleaning Solutions',
+    title: { absolute: 'House Cleaning in State College, PA | Black Diamond' },
     description: 'Professional house cleaning in State College, PA. Trusted by Penn State-area homeowners and landlords. 4.9★ on Google. Get your free quote today.',
     url: `${BASE_URL}/service-areas/state-college-pa`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('House Cleaning in State College, PA', 'Trusted by Penn State-Area Homeowners & Landlords'), secureUrl: ogImageUrl('House Cleaning in State College, PA', 'Trusted by Penn State-Area Homeowners & Landlords'), width: 1200, height: 630, alt: 'House Cleaning State College PA — Black Diamond Cleaning Solutions', type: 'image/png' }],
   },

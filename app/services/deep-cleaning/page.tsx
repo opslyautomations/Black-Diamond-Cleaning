@@ -20,17 +20,17 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Deep Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+  title: { absolute: 'Deep Cleaning Service | Black Diamond Cleaning' },
   description:
     'Deep cleaning service from Black Diamond — top-to-bottom intensive cleaning across PA & NY. New customers save 15%. 4.9★ on Google. Get a free quote today.',
   alternates: { canonical: `${BASE_URL}/services/deep-cleaning` },
   openGraph: {
     type: 'website',
-    title: 'Deep Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+    title: { absolute: 'Deep Cleaning Service | Black Diamond Cleaning' },
     description:
       'Deep cleaning service from Black Diamond — top-to-bottom intensive cleaning across PA & NY. New customers save 15%. 4.9★ on Google. Get a free quote today.',
     url: `${BASE_URL}/services/deep-cleaning`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{
       url: ogImageUrl('Deep Cleaning Service', 'The Total Reset Your Home Deserves — PA & NY'),

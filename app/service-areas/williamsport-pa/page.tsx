@@ -5,16 +5,16 @@ import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'House Cleaning in Williamsport, PA | Black Diamond Cleaning Solutions',
+  title: { absolute: 'House Cleaning in Williamsport, PA | Black Diamond' },
   description:
     'Professional house cleaning in Williamsport, PA. Expert care for historic and Victorian properties in Lycoming County. 4.9★ on Google. Get your free quote today.',
   alternates: { canonical: `${BASE_URL}/service-areas/williamsport-pa` },
   openGraph: {
     type: 'website',
-    title: 'House Cleaning in Williamsport, PA | Black Diamond Cleaning Solutions',
+    title: { absolute: 'House Cleaning in Williamsport, PA | Black Diamond' },
     description: 'Professional house cleaning in Williamsport, PA. Expert care for historic and Victorian properties in Lycoming County. 4.9★ on Google. Get your free quote today.',
     url: `${BASE_URL}/service-areas/williamsport-pa`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('House Cleaning in Williamsport, PA', 'Expert Care for Lycoming County Homes'), secureUrl: ogImageUrl('House Cleaning in Williamsport, PA', 'Expert Care for Lycoming County Homes'), width: 1200, height: 630, alt: 'House Cleaning Williamsport PA — Black Diamond Cleaning Solutions', type: 'image/png' }],
   },

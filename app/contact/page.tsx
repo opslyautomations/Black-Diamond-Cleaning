@@ -8,16 +8,16 @@ import JsonLd from '@/components/JsonLd'
 import GHLForm from '@/components/GHLForm'
 
 export const metadata: Metadata = {
-  title: 'Contact Black Diamond Cleaning Solutions | Get a Free Quote Today',
+  title: { absolute: 'Get a Free Quote | Black Diamond Cleaning PA & NY' },
   description:
     'Contact Black Diamond Cleaning Solutions for a free house cleaning quote across PA & NY. Call (215) 650-3101 or fill out our form. Same-day service often available.',
   alternates: { canonical: `${BASE_URL}/contact` },
   openGraph: {
     type: 'website',
-    title: 'Contact Black Diamond Cleaning Solutions | Get a Free Quote Today',
+    title: { absolute: 'Get a Free Quote | Black Diamond Cleaning PA & NY' },
     description: 'Contact Black Diamond Cleaning Solutions for a free house cleaning quote across PA & NY. Call (215) 650-3101 or fill out our form.',
     url: `${BASE_URL}/contact`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('Get a Free Quote', 'Contact Black Diamond Cleaning Solutions'), secureUrl: ogImageUrl('Get a Free Quote', 'Contact Black Diamond Cleaning Solutions'), width: 1200, height: 630, alt: 'Contact Black Diamond Cleaning Solutions — Free Quote', type: 'image/png' }],
   },

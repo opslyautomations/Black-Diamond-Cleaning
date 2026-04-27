@@ -24,8 +24,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: `${SITE_NAME} | Professional House Cleaning in PA & NY`,
-    template: `%s | Black Diamond Cleaning Solutions`,
+    default: 'Black Diamond Cleaning | Professional House Cleaning PA & NY',
+    template: '%s | Black Diamond Cleaning',
   },
   description:
     'Premium house cleaning, deep cleaning & maid service across Pennsylvania and New York. 4.9★ on Google. 500+ homes cleaned. Get a free quote today.',

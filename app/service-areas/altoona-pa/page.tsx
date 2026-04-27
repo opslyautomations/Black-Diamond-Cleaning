@@ -5,16 +5,16 @@ import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'House Cleaning in Altoona, PA | Black Diamond Cleaning Solutions',
+  title: { absolute: 'House Cleaning in Altoona, PA | Black Diamond' },
   description:
     'Professional house cleaning in Altoona, PA. Trusted by Blair County homeowners and families. 4.9★ on Google. Same-day availability. Get your free quote today.',
   alternates: { canonical: `${BASE_URL}/service-areas/altoona-pa` },
   openGraph: {
     type: 'website',
-    title: 'House Cleaning in Altoona, PA | Black Diamond Cleaning Solutions',
+    title: { absolute: 'House Cleaning in Altoona, PA | Black Diamond' },
     description: 'Professional house cleaning in Altoona, PA. Trusted by Blair County homeowners and families. 4.9★ on Google. Same-day availability. Get your free quote today.',
     url: `${BASE_URL}/service-areas/altoona-pa`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('House Cleaning in Altoona, PA', 'Locally Trusted Across Blair County'), secureUrl: ogImageUrl('House Cleaning in Altoona, PA', 'Locally Trusted Across Blair County'), width: 1200, height: 630, alt: 'House Cleaning Altoona PA — Black Diamond Cleaning Solutions', type: 'image/png' }],
   },

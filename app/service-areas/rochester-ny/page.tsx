@@ -5,16 +5,16 @@ import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'House Cleaning in Rochester, NY | Black Diamond Cleaning Solutions',
+  title: { absolute: 'House Cleaning in Rochester, NY | Black Diamond' },
   description:
     'Professional house cleaning in Rochester, NY. Trusted by Monroe County homeowners and recurring plan customers. 4.9★ on Google. Get your free quote today.',
   alternates: { canonical: `${BASE_URL}/service-areas/rochester-ny` },
   openGraph: {
     type: 'website',
-    title: 'House Cleaning in Rochester, NY | Black Diamond Cleaning Solutions',
+    title: { absolute: 'House Cleaning in Rochester, NY | Black Diamond' },
     description: 'Professional house cleaning in Rochester, NY. Trusted by Monroe County homeowners and recurring plan customers. 4.9★ on Google. Get your free quote today.',
     url: `${BASE_URL}/service-areas/rochester-ny`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('House Cleaning in Rochester, NY', 'Dependable Service Across Monroe County'), secureUrl: ogImageUrl('House Cleaning in Rochester, NY', 'Dependable Service Across Monroe County'), width: 1200, height: 630, alt: 'House Cleaning Rochester NY — Black Diamond Cleaning Solutions', type: 'image/png' }],
   },

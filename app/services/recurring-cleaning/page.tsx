@@ -20,17 +20,17 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Recurring Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+  title: { absolute: 'Recurring Cleaning Service | Black Diamond Cleaning' },
   description:
     'Recurring house cleaning from Black Diamond — weekly, bi-weekly, or monthly plans at discounted rates across PA & NY. No contract. 4.9★ on Google. Free quote today.',
   alternates: { canonical: `${BASE_URL}/services/recurring-cleaning` },
   openGraph: {
     type: 'website',
-    title: 'Recurring Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+    title: { absolute: 'Recurring Cleaning Service | Black Diamond Cleaning' },
     description:
       'Recurring house cleaning from Black Diamond — weekly, bi-weekly, or monthly plans at discounted rates across PA & NY. No contract. 4.9★ on Google. Free quote today.',
     url: `${BASE_URL}/services/recurring-cleaning`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{
       url: ogImageUrl('Recurring House Cleaning', 'Your Home, Perpetually Spotless — PA & NY'),

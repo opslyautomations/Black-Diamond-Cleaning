@@ -22,13 +22,13 @@ import JsonLd from '@/components/JsonLd'
 import GHLForm from '@/components/GHLForm'
 
 export const metadata: Metadata = {
-  title: `${SITE_NAME} | Professional House Cleaning in PA & NY`,
+  title: { absolute: 'Black Diamond Cleaning | Professional House Cleaning PA & NY' },
   description:
     'Premium house cleaning, deep cleaning & maid service across Pennsylvania and New York. 4.9★ on Google. 500+ homes cleaned. Get a free quote today.',
   alternates: { canonical: `${BASE_URL}/` },
   openGraph: {
     type: 'website',
-    title: `${SITE_NAME} | Professional House Cleaning in PA & NY`,
+    title: { absolute: 'Black Diamond Cleaning | Professional House Cleaning PA & NY' },
     description:
       'Premium house cleaning, deep cleaning & maid service across Pennsylvania and New York. 4.9★ on Google. 500+ homes cleaned. Get a free quote today.',
     url: `${BASE_URL}/`,

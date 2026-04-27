@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!post) return {}
 
   return {
-    title: `${post.metaTitle} | ${SITE_NAME}`,
+    title: { absolute: post.metaTitle },
     description: post.description,
     alternates: { canonical: `${BASE_URL}/blog/${post.slug}` },
     openGraph: {

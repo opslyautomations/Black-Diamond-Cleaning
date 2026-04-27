@@ -20,17 +20,17 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Move-In/Move-Out Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+  title: { absolute: 'Move-In/Out Cleaning | Black Diamond Cleaning' },
   description:
     'Move-in & move-out cleaning from Black Diamond — transition-ready top-to-bottom cleaning across PA & NY. Get your deposit back. 4.9★ on Google. Free quote today.',
   alternates: { canonical: `${BASE_URL}/services/move-in-move-out-cleaning` },
   openGraph: {
     type: 'website',
-    title: 'Move-In/Move-Out Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+    title: { absolute: 'Move-In/Out Cleaning | Black Diamond Cleaning' },
     description:
       'Move-in & move-out cleaning from Black Diamond — transition-ready top-to-bottom cleaning across PA & NY. Get your deposit back. 4.9★ on Google. Free quote today.',
     url: `${BASE_URL}/services/move-in-move-out-cleaning`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{
       url: ogImageUrl('Move-In & Move-Out Cleaning', 'Transition-Ready in Every Room — PA & NY'),

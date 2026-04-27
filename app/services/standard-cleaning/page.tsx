@@ -20,17 +20,17 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Standard Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+  title: { absolute: 'Standard Cleaning Service | Black Diamond Cleaning' },
   description:
     'Standard house cleaning from Black Diamond — professional whole-home cleaning across PA & NY. 4.9★ on Google. Consistent quality every visit. Get a free quote today.',
   alternates: { canonical: `${BASE_URL}/services/standard-cleaning` },
   openGraph: {
     type: 'website',
-    title: 'Standard Cleaning | Black Diamond Cleaning Solutions — PA & NY',
+    title: { absolute: 'Standard Cleaning Service | Black Diamond Cleaning' },
     description:
       'Standard house cleaning from Black Diamond — professional whole-home cleaning across PA & NY. 4.9★ on Google. Consistent quality every visit. Get a free quote today.',
     url: `${BASE_URL}/services/standard-cleaning`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{
       url: ogImageUrl('Standard House Cleaning', 'Consistent Quality Every Visit — PA & NY'),

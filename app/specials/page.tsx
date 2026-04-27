@@ -8,16 +8,16 @@ import JsonLd from '@/components/JsonLd'
 import GHLForm from '@/components/GHLForm'
 
 export const metadata: Metadata = {
-  title: 'Current Specials | Black Diamond Cleaning Solutions — PA & NY',
+  title: { absolute: 'Cleaning Specials | Black Diamond Cleaning PA & NY' },
   description:
     'Save on professional house cleaning — 15% off your first deep cleaning for new customers. Plus recurring plan savings and property manager pricing. Get a free quote.',
   alternates: { canonical: `${BASE_URL}/specials` },
   openGraph: {
     type: 'website',
-    title: 'Current Specials | Black Diamond Cleaning Solutions — PA & NY',
+    title: { absolute: 'Cleaning Specials | Black Diamond Cleaning PA & NY' },
     description: 'Save on professional house cleaning — 15% off your first deep cleaning for new customers. Plus recurring plan savings and property manager pricing.',
     url: `${BASE_URL}/specials`,
-    siteName: 'Black Diamond Cleaning Solutions LLC',
+    siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('Current Specials & Offers', '15% Off Your First Deep Cleaning — New Customers'), secureUrl: ogImageUrl('Current Specials & Offers', '15% Off Your First Deep Cleaning — New Customers'), width: 1200, height: 630, alt: 'Black Diamond Cleaning Specials — 15% Off First Deep Clean', type: 'image/png' }],
   },
