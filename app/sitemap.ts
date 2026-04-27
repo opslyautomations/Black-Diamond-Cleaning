@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blog-posts'
 
-const BASE = 'https://blackdiamondcleaningsolutionsllc.com'
+const BASE = 'https://www.blackdiamondcleaningsolutionsllc.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString()

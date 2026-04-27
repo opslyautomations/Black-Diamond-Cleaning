@@ -1,4 +1,4 @@
-const BASE_URL = 'https://blackdiamondcleaningsolutionsllc.com'
+const BASE_URL = 'https://www.blackdiamondcleaningsolutionsllc.com'
 
 const allCities = [
   { '@type': 'City', name: 'State College, PA' },

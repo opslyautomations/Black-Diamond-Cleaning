@@ -27,6 +27,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/', '/private/'],
       },
     ],
-    sitemap: 'https://blackdiamondcleaningsolutionsllc.com/sitemap.xml',
+    sitemap: 'https://www.blackdiamondcleaningsolutionsllc.com/sitemap.xml',
   }
 }

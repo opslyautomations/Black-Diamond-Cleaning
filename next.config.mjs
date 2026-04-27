@@ -1,13 +1,14 @@
-
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
+  async redirects() {
+    return [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        source: '/:path*',
+        has: [{ type: 'host', value: 'blackdiamondcleaningsolutionsllc.com' }],
+        destination: 'https://www.blackdiamondcleaningsolutionsllc.com/:path*',
+        permanent: true,
       },
-    ],
+    ]
   },
 }
 
