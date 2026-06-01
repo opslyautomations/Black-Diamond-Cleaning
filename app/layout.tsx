@@ -41,6 +41,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://widgets.leadconnectorhq.com" />
+        <link rel="preconnect" href="https://api.leadconnectorhq.com" />
+        <link rel="dns-prefetch" href="https://link.msgsndr.com" />
+      </head>
       <body className="font-body text-brand-gray bg-white antialiased">
         <JsonLd data={localBusinessSchema} />
         <Navbar />
@@ -54,12 +59,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="lazyOnload"
         />
 
-        {/* GHL Chat Widget — appears on every page */}
+        {/* GHL Chat Widget — deferred until page idle to improve LCP/TBT */}
         <Script
           src="https://widgets.leadconnectorhq.com/loader.js"
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
           data-widget-id="69c6eabd13ad14363745bd60"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
         {/* Google Analytics 4 — paste GA4 Measurement ID when provided

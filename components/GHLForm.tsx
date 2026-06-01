@@ -23,6 +23,7 @@ export default function GHLForm() {
         data-layout-iframe-id="inline-65MDgtyt2ec1KMKAPTRT"
         data-form-id="65MDgtyt2ec1KMKAPTRT"
         title="House Cleaning Lead Generation"
+        loading="lazy"
       />
     </div>
   )
