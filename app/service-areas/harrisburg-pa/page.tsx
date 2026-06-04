@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,16 @@ export default function HarrisburgPage() {
           'Trusted by Dauphin County property managers',
         ]}
         nearbyAreas={['Hershey', 'Camp Hill', 'Mechanicsburg', 'Lemoyne']}
-      />
+      >
+        <LocalResources
+          city="Harrisburg"
+          links={[
+            { label: 'Harrisburg Regional Chamber & CREDC', href: 'https://www.harrisburgregionalchamber.org/' },
+            { label: 'BNI Central PA — Find a Chapter', href: 'https://bnicentralpa.com/en-US/findachapter' },
+            { label: 'Visit Hershey & Harrisburg', href: 'https://www.visithersheyharrisburg.org/' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

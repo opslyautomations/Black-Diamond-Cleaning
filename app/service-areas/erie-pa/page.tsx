@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,16 @@ export default function EriePage() {
           'Local trust built on 5-star reviews and word-of-mouth',
         ]}
         nearbyAreas={['Millcreek', 'Harborcreek', 'Fairview', 'North East']}
-      />
+      >
+        <LocalResources
+          city="Erie"
+          links={[
+            { label: 'Erie Regional Chamber and Growth Partnership', href: 'https://eriepa.com/' },
+            { label: 'BNI Western PA — Find a Chapter', href: 'https://bni-westernpa.com/en-US/findachapter' },
+            { label: 'VisitErie', href: 'https://www.visiterie.com/' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

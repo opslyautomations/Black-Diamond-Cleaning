@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,17 @@ export default function StateCollegePage() {
           'Trusted by Centre County property managers for consistent quality',
         ]}
         nearbyAreas={['Bellefonte', 'Boalsburg', 'Port Matilda', 'Philipsburg']}
-      />
+      >
+        <LocalResources
+          city="State College"
+          links={[
+            { label: 'Chamber of Business & Industry of Centre County (CBICC)', href: 'https://cbicc.org/' },
+            { label: 'BNI Central PA — Find a Chapter', href: 'https://bnicentralpa.com/en-US/findachapter' },
+            { label: 'Happy Valley Adventure Bureau', href: 'https://happyvalley.com/' },
+            { label: 'Centre County Economic Development', href: 'https://www.centrecountypa.gov/624/Local-Economic-Development-Organizations' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

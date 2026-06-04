@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,16 @@ export default function AltoonaPage() {
           'Same-day availability for many cleaning types',
         ]}
         nearbyAreas={['Hollidaysburg', 'Duncansville', 'Tyrone', 'Bellwood']}
-      />
+      >
+        <LocalResources
+          city="Altoona"
+          links={[
+            { label: 'Blair County Chamber of Commerce', href: 'https://blairchamber.com/' },
+            { label: 'BNI Central PA — Find a Chapter', href: 'https://bnicentralpa.com/en-US/findachapter' },
+            { label: 'Explore Altoona', href: 'https://explorealtoona.com/' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

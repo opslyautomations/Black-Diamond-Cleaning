@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,17 @@ export default function ScrantonPage() {
           'Trusted by Lackawanna County Airbnb hosts for quick turnovers',
         ]}
         nearbyAreas={['Dunmore', 'Clarks Summit', 'Moosic', 'Dickson City']}
-      />
+      >
+        <LocalResources
+          city="Scranton"
+          links={[
+            { label: 'Greater Scranton Chamber of Commerce', href: 'https://www.scrantonchamber.com/' },
+            { label: 'BNI NJ/NEPA — Find a Chapter', href: 'https://bninjpa.org/en-US/findachapter' },
+            { label: 'Visit NEPA', href: 'https://www.visitnepa.org/' },
+            { label: 'Lackawanna County Planning & Economic Development', href: 'https://www.lackawannacounty.org/government/departments/economic_development/index.php' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

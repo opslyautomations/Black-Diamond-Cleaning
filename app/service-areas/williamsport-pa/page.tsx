@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,16 @@ export default function WilliamsportPage() {
           'Trusted by local real estate professionals for listing preps',
         ]}
         nearbyAreas={['Montoursville', 'South Williamsport', 'Loyalsock', 'Jersey Shore']}
-      />
+      >
+        <LocalResources
+          city="Williamsport"
+          links={[
+            { label: 'Williamsport/Lycoming Chamber of Commerce', href: 'https://williamsport.org/' },
+            { label: 'BNI Central PA — Find a Chapter', href: 'https://bnicentralpa.com/en-US/findachapter' },
+            { label: 'Lycoming County Visitors Bureau', href: 'https://visitlycomingcounty.com/' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

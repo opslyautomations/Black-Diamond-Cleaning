@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,16 @@ export default function BuffaloPage() {
           'Trusted by Erie County landlords and short-term rental owners',
         ]}
         nearbyAreas={['Amherst', 'Cheektowaga', 'Tonawanda', 'West Seneca']}
-      />
+      >
+        <LocalResources
+          city="Buffalo"
+          links={[
+            { label: 'Buffalo Niagara Partnership', href: 'https://www.thepartnership.org/' },
+            { label: 'BNI Western New York', href: 'https://bninewyork.com/en-US/index' },
+            { label: 'Visit Buffalo', href: 'https://visitbuffalo.com/' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

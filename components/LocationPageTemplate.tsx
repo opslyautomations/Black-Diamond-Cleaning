@@ -13,9 +13,10 @@ interface LocationPageProps {
   intro: string
   reasons: string[]
   nearbyAreas: string[]
+  children?: React.ReactNode
 }
 
-export default function LocationPageTemplate({ city, state, intro, reasons, nearbyAreas }: LocationPageProps) {
+export default function LocationPageTemplate({ city, state, intro, reasons, nearbyAreas, children }: LocationPageProps) {
   return (
     <>
       {/* ── HERO ── */}
@@ -170,6 +171,8 @@ export default function LocationPageTemplate({ city, state, intro, reasons, near
           </div>
         </div>
       </section>
+
+      {children}
 
       {/* ── FINAL CTA ── */}
       <section className="bg-brand-navy py-20">

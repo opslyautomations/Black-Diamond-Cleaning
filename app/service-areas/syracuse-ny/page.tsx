@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,16 @@ export default function SyracusePage() {
           '5-star reviews from Onondaga County homeowners',
         ]}
         nearbyAreas={['DeWitt', 'Liverpool', 'Camillus', 'Manlius']}
-      />
+      >
+        <LocalResources
+          city="Syracuse"
+          links={[
+            { label: 'CenterState CEO', href: 'https://centerstateceo.com/' },
+            { label: 'BNI Upstate New York — Find a Chapter', href: 'https://bniupstateny.com/en-US/findachapter' },
+            { label: 'Visit Syracuse', href: 'https://www.visitsyracuse.com/' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }

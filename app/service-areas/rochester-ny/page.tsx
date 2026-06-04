@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LocationPageTemplate from '@/components/LocationPageTemplate'
+import LocalResources from '@/components/LocalResources'
 import JsonLd from '@/components/JsonLd'
 import { BASE_URL, ogImageUrl, defaultRobots } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -36,7 +37,16 @@ export default function RochesterPage() {
           'Flexible weekly and bi-weekly plans that fit busy lives',
         ]}
         nearbyAreas={['Brighton', 'Pittsford', 'Irondequoit', 'Henrietta']}
-      />
+      >
+        <LocalResources
+          city="Rochester"
+          links={[
+            { label: 'Greater Rochester Chamber of Commerce', href: 'https://www.greaterrochesterchamber.com/' },
+            { label: 'BNI Rochester, New York — Find a Chapter', href: 'https://bninystate.com/en-US/findachapter' },
+            { label: 'Visit Rochester', href: 'https://www.visitrochester.com/' },
+          ]}
+        />
+      </LocationPageTemplate>
     </>
   )
 }
