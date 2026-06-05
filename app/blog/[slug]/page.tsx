@@ -12,6 +12,9 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }))
 }
 
+// Any slug not in generateStaticParams returns a real 404 — no phantom render
+export const dynamicParams = false
+
 export async function generateMetadata({
   params,
 }: {
