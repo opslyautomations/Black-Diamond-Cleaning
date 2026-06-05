@@ -26,6 +26,7 @@ interface ServicePageProps {
   benefits: Benefit[]
   faqs: FAQ[]
   relatedServices: RelatedService[]
+  children?: React.ReactNode
 }
 
 export default function ServicePageTemplate({
@@ -35,6 +36,7 @@ export default function ServicePageTemplate({
   benefits,
   faqs,
   relatedServices,
+  children,
 }: ServicePageProps) {
   return (
     <>
@@ -98,6 +100,8 @@ export default function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {children}
 
       {/* ── FAQs ── */}
       <section className="section-padding bg-brand-light">
