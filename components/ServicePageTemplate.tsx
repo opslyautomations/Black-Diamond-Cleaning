@@ -114,7 +114,7 @@ export default function ServicePageTemplate({
               {faqs.map((faq) => (
                 <div key={faq.question} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                   <h3 className="font-heading font-bold text-lg text-brand-navy mb-3">{faq.question}</h3>
-                  <p className="text-brand-gray leading-relaxed">{faq.answer}</p>
+                  <p className="text-brand-gray leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </div>
               ))}
             </div>
