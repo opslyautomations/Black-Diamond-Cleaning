@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   Phone,
   Star,
@@ -69,8 +70,17 @@ export default function HomePage() {
       <JsonLd data={websiteSchema} />
 
       {/* ── HERO ── */}
-      <section className="bg-gradient-to-br from-brand-navy to-[#132040] text-white">
-        <div className="section-container py-16 lg:py-24">
+      <section className="relative text-white overflow-hidden">
+        <Image
+          src="/pexels-reyd-valencia-2159301653-36878353.jpg"
+          alt="Spotless, professionally cleaned modern living room"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/90 to-brand-navy/70" />
+        <div className="relative section-container py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left */}
             <div>

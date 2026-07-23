@@ -9,18 +9,18 @@ import JsonLd from '@/components/JsonLd'
 export const metadata: Metadata = {
   title: { absolute: 'About Black Diamond Cleaning | PA & NY' },
   description:
-    'About Black Diamond Cleaning Solutions — founded by Joe to bring reliable, consistent house cleaning to PA & NY. 4.9★ on Google. 500+ homes cleaned. Learn our story.',
+    'About Black Diamond Cleaning Solutions — founded by Joe and his wife to bring reliable, consistent house cleaning to PA & NY. 4.9★ on Google. 500+ homes cleaned. Learn our story.',
   alternates: { canonical: `${BASE_URL}/about` },
   openGraph: {
     type: 'website',
     title: { absolute: 'About Black Diamond Cleaning | PA & NY' },
-    description: 'About Black Diamond Cleaning Solutions — founded by Joe to bring reliable, consistent house cleaning to PA & NY. 4.9★ on Google. 500+ homes cleaned.',
+    description: 'About Black Diamond Cleaning Solutions — founded by Joe and his wife to bring reliable, consistent house cleaning to PA & NY. 4.9★ on Google. 500+ homes cleaned.',
     url: `${BASE_URL}/about`,
     siteName: 'Black Diamond Cleaning Solutions',
     locale: 'en_US',
     images: [{ url: ogImageUrl('About Black Diamond Cleaning Solutions', 'Built on Reliability, Consistency & Care'), secureUrl: ogImageUrl('About Black Diamond Cleaning Solutions', 'Built on Reliability, Consistency & Care'), width: 1200, height: 630, alt: 'About Black Diamond Cleaning Solutions', type: 'image/png' }],
   },
-  twitter: { card: 'summary_large_image', title: 'About Black Diamond Cleaning Solutions', description: 'Trusted house cleaning across PA & NY. Founded by Joe. 4.9★ Google.', images: [ogImageUrl('About Black Diamond Cleaning Solutions', 'Built on Reliability, Consistency & Care')] },
+  twitter: { card: 'summary_large_image', title: 'About Black Diamond Cleaning Solutions', description: 'Trusted house cleaning across PA & NY. Founded by Joe and his wife. 4.9★ Google.', images: [ogImageUrl('About Black Diamond Cleaning Solutions', 'Built on Reliability, Consistency & Care')] },
   robots: defaultRobots,
 }
 
@@ -46,11 +46,14 @@ export default function AboutPage() {
         <div className="section-container max-w-4xl mx-auto">
           <h2 className="font-heading font-bold text-3xl text-brand-navy mb-6">Our Story</h2>
           <p className="text-brand-gray text-lg leading-relaxed mb-6">
-            Black Diamond Cleaning Solutions was founded to bring premium house cleaning and maid service to the East Coast. Our founder, Joe, owns rental properties and experienced firsthand the frustrations of unreliable cleaning services — missed appointments, inconsistent quality, and poor communication. Determined to do better, Joe launched Black Diamond to provide professional cleaning that eliminates the headaches.
+            Black Diamond Cleaning Solutions was founded to bring premium house cleaning and maid service to the East Coast. Our founder, Joe, owns rental properties and experienced firsthand the frustrations of unreliable cleaning services — missed appointments, inconsistent quality, and poor communication. Determined to do better, Joe and his wife built Black Diamond together to provide professional cleaning that eliminates the headaches.
+          </p>
+          <p className="text-brand-gray text-lg leading-relaxed mb-6">
+            What started as a shared idea between the two of them has grown into a company built on the same values they run their household and their rental properties by. Joe and his wife work side by side — from hiring and training every cleaner to checking in on jobs personally — so that the care they'd want for their own home is the same care every Black Diamond customer gets.
           </p>
           <h3 className="font-heading font-bold text-xl text-brand-navy mb-4">What We Do</h3>
           <p className="text-brand-gray text-lg leading-relaxed mb-8">
-            Whether you need deep cleaning, move-out cleaning, or recurring cleaning for your home, we deliver meticulous results every time. In just over a year, we&apos;ve proudly served 500+ customers and earned a 4.9-star Google rating. Homeowners, renters, property management companies, Airbnb hosts, and small commercial buildings trust Black Diamond for residential cleaning that shines.
+            Whether you need deep cleaning, move-out cleaning, or recurring cleaning for your home, we deliver meticulous results every time. In just over a year, we&apos;ve proudly served 500+ customers and earned a 4.9-star Google rating. Homeowners, renters, property management companies, short-term rental hosts, and small commercial buildings trust Black Diamond for residential cleaning that shines.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             {[
@@ -102,9 +105,9 @@ export default function AboutPage() {
         <div className="section-container max-w-4xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="font-heading font-bold text-3xl text-brand-navy mb-6">Meet Joe</h2>
+              <h2 className="font-heading font-bold text-3xl text-brand-navy mb-6">Meet Joe &amp; His Wife</h2>
               <p className="text-brand-gray text-lg leading-relaxed mb-6">
-                As a rental property owner, Joe saw the cleaning industry from the customer side — and knew it had to be better. He built Black Diamond to set a new standard for house cleaning on the East Coast. Today, he personally oversees the quality of every cleaning team we send out.
+                As a rental property owner, Joe saw the cleaning industry from the customer side — and knew it had to be better. Together, he and his wife built Black Diamond to set a new standard for house cleaning on the East Coast. Today, they personally oversee the quality of every cleaning team sent out, working as partners in the business the same way they do in life.
               </p>
               <div className="flex items-center gap-3 p-4 bg-brand-light rounded-xl">
                 <Shield className="w-8 h-8 text-brand-blue flex-shrink-0" />
@@ -118,15 +121,15 @@ export default function AboutPage() {
               <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-5">
                 <Diamond className="w-10 h-10 text-white" fill="rgba(255,255,255,0.15)" />
               </div>
-              <p className="font-heading font-bold text-white text-2xl mb-1">Joe</p>
-              <p className="text-white/60 text-sm mb-6">Founder &amp; Owner</p>
+              <p className="font-heading font-bold text-white text-2xl mb-1">Joe &amp; His Wife</p>
+              <p className="text-white/60 text-sm mb-6">Founders &amp; Owners</p>
               <div className="flex gap-1 mb-3">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
               <p className="text-white/75 text-sm italic leading-relaxed">
-                &ldquo;I built Black Diamond because I know what it feels like to be let down by a cleaning service. We do not miss appointments. We do not cut corners.&rdquo;
+                &ldquo;We built Black Diamond together because we know what it feels like to be let down by a cleaning service. We do not miss appointments. We do not cut corners.&rdquo;
               </p>
             </div>
           </div>
